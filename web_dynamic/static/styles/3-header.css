@@ -1,21 +1,26 @@
 header {
+     background: white;
      height: 70px;
      width: 100%;
      border-bottom: 1px solid #CCCCCC;
-     background: white url(../images/logo.png);
-     background-repeat: no-repeat;
-     background-position: 20px center;
-    flex-shrink: 0;
+}
+header.logo {
+     background: white url(../images/logo.png) no-repeat;
+     left: 20px;
+     height: 100%;
 }
 
-#api_status {
-   margin-right: 30px;
-  border-radius: 50%;
-  width: 40px;
-   height: 40px;
-   background-color: #cccccc;
+header #api_status {
+     text-align: right;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     right: 30px;
+     top: 10px;
+     position: absolute;
+     background-color: #cccccc;
 }
 
-#api_status.available {
-    background-color: #ff545f;
+.available {
+     background-color: #ff545f !important;
 }
