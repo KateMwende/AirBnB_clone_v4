@@ -1,15 +1,16 @@
 $(document).ready(function () {
-  const checkBox = {};
-
+  const amenList = {};
   $('input[type="checkbox"]').change(function () {
-    const amenityId = $(this).data('id');
-    const amenityName = $(this).data('name');
-
     if ($(this).is(':checked')) {
-      checkBox[amenityId] = amenityName;
+      amenList[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
-      delete checkBox[amenityId];
+      delete amenList[$(this).attr('data-id')];
     }
-    $('.amenities > h4').text(Object.values(checkBox).join(', '));
-  });
-});
+    let text = Object.values(amenList).join(', ');
+    if (text.length > 37) {
+      text = text.slice(0, 37) + '...';
+    }
+    if (text) {
+      $('.amenities > h4').text(text);
+    } else {
+      $('.amenities > h4').text
