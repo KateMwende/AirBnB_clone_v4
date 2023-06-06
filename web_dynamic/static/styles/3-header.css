@@ -15,7 +15,6 @@ header .logo {
 
 header #api_status {
      margin-left: auto;
-     position: absolute;
      top: 50%;
      border-radius: 50%;
      transform: translateY(-50%);
