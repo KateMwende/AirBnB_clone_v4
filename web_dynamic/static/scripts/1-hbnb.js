@@ -13,4 +13,7 @@ $(document).ready(function () {
     if (text) {
       $('.amenities > h4').text(text);
     } else {
-      $('.amenities > h4').text
+      $('.amenities > h4').text('\xa0');
+    }
+  });
+});
