@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const checkBox = {};
 
-  $('.amenity-checkbox').change(function () {
+  $('.amenities-checkbox').change(function () {
     const amenityId = $(this).data('id');
     const amenityName = $(this).data('name');
 
