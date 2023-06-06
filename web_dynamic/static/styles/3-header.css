@@ -1,4 +1,5 @@
 header {
+     position: relative;
      background: white;
      height: 70px;
      line-height: 70px;
@@ -14,6 +15,7 @@ header .logo {
 }
 
 header #api_status {
+     position: absolute;
      margin-left: auto;
      top: 50%;
      border-radius: 50%;
