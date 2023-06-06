@@ -10,6 +10,6 @@ $(document).ready(function () {
     } else {
       delete checkBox[amenityId];
     }
-    $('.amenities h4').text(Object.values(checkBox).join(', '));
+    $('.amenities > h4').text(Object.values(checkBox).join(', '));
   });
 });
